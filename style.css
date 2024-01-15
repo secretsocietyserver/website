@@ -1,0 +1,168 @@
+:root {
+  --text: #fcf7fb;
+  --background: #0f050d;
+  --primary-button: #c14e72;
+  --secondary-button: #000000;
+  --accent: #942b54;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.accent {
+  background-color: var(--accent);
+}
+
+* {
+  color: var(--text);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: var(--accent);
+  z-index: 1;
+}
+
+.right-bar-elements,
+.left-bar-elements,
+.socialsDiv {
+  padding: 5px;
+}
+
+a.imgNBB,
+a.iconNBB {
+  border-radius: 10px;
+}
+
+t {
+  font-size: 8vw;
+  font-weight: bold;
+}
+
+.mHeader {
+  position: absolute;
+  height: 100px;
+  top: calc(50% - 20%/2);
+  display: inline-block;
+  padding-left: 5%;
+  padding-right: 15px;
+}
+
+.w3-button {
+  transition: all 350ms;
+}
+
+.w3-button:hover {
+  background-color: var(--primary-button);
+}
+
+.socialsDiv>a {
+  padding: 5px;
+}
+
+.socialsDiv {
+  background-color: var(--accent);
+  padding: 5px;
+}
+
+.headerImg {
+  width: 85%;
+  aspect-ratio: 16/9;
+  border-radius: 0px 0px 25px 25px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5vw;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.575);
+  border-radius: 15px;
+  padding: 15px;
+  color: white;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.mttCard {
+  /* position: relative; */
+  padding: 15px;
+  border-radius: 25px;
+  width: 90%;
+  margin: 15px;
+  background-color: #161717;
+}
+
+.mttCard > h1 {
+  font-size: 28px;
+}
+
+.mttCards {
+  margin: 0;
+}
+
+.mttcImg {
+  width: 300px;
+  height: 300px;
+  border-radius: 10%;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.575);
+}
+
+#renderSurface {
+  width: 100%;
+  height: 50vh;
+}
+
+.galleryImg {
+  width: auto;
+  padding-left: 25px;
+  padding: 0px 50px 50px 50px;
+}
+
+.galleryImg > img {
+  transition: all 350ms;
+  margin: 16px;
+  width: 30%;
+}
+
+.galleryImg > p {
+  margin-top: -3%;
+  opacity: 0;
+  transition: all 350ms;
+}
+
+.galleryImg:hover > p {
+  opacity: 1;
+  margin-top: 15px;
+}
+
+.galleryImg > img:active {
+  width: 70%;
+}
+
+.w3-bottom.socialsDiv > a > img {
+  filter: saturate(200%);
+}
+
+.w3-bottom.socialsDiv > a {
+  transition: all 350ms;
+}
+
+.w3-bottom.socialsDiv > a:hover {
+  scale: 1.3;
+}
